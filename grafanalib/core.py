@@ -836,25 +836,27 @@ class Dashboard(object):
 
     def to_json_data(self):
         return {
-            '__inputs': self.inputs,
-            'annotations': self.annotations,
-            'editable': self.editable,
-            'gnetId': self.gnetId,
-            'hideControls': self.hideControls,
-            'id': self.id,
-            'links': self.links,
-            'refresh': self.refresh,
-            'rows': self.rows,
-            'schemaVersion': self.schemaVersion,
-            'sharedCrosshair': self.sharedCrosshair,
-            'style': self.style,
-            'tags': self.tags,
-            'templating': self.templating,
-            'title': self.title,
-            'time': self.time,
-            'timepicker': self.timePicker,
-            'timezone': self.timezone,
-            'version': self.version,
+            'dashboard': {
+                '__inputs': self.inputs,
+                'annotations': self.annotations,
+                'editable': self.editable,
+                'gnetId': self.gnetId,
+                'hideControls': self.hideControls,
+                'id': self.id,
+                'links': self.links,
+                'refresh': self.refresh,
+                'rows': self.rows,
+                'schemaVersion': self.schemaVersion,
+                'sharedCrosshair': self.sharedCrosshair,
+                'style': self.style,
+                'tags': self.tags,
+                'templating': self.templating,
+                'title': self.title,
+                'time': self.time,
+                'timepicker': self.timePicker,
+                'timezone': self.timezone,
+                'version': self.version,
+            }
         }
 
 
